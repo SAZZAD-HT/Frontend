@@ -1,0 +1,125 @@
+/*** START MOUSE Draggable CSS ***/
+.draggable-container {
+    width: 300px;
+    height: 65vh;
+    border: 1px solid #ccc;
+    overflow: auto;
+    position: relative;
+}
+/*** END MOUSE Draggable CSS ***/
+
+
+.draggable-container:hover {
+    cursor: grab;
+}
+
+
+.bidding-lists-details{
+    justify-content: center;
+    align-items: center;
+    //overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .tender-reports-header{
+        padding: 3px 4px;
+        text-align: center;
+        border: 1px solid #4cd874;
+        background-color: #299647;
+        border-right: none;
+        color: #fff;
+        b{
+            font-family: 'Titillium Web',sans-serif;
+            font-size: 13px !important;
+        }
+    }
+    .tender-reports-header.company-name-column{
+        border: 1px solid #ffec3d;
+        background-color: #d4b106;
+        border-right: none;
+    }
+    .tender-user-column{
+        padding: 0 !important;
+    }
+    .tender-reports-header:last-of-type{
+        border-right: 1px solid #4cd874 !important;
+    }
+    .tender-reports-content{
+        padding: 3px 4px;
+        text-align: center;
+        border: 1px solid #4cd874;
+        border-top: none;
+        background-color: #fff;
+        border-right: none;
+        color: #000;
+        span{
+            font-family: 'Titillium Web',sans-serif;
+            font-size: 13px !important;
+        }
+    }
+    .tender-reports-content:last-of-type{
+        border-right: 1px solid #4cd874 !important;
+    }
+    .ant-divider-horizontal{
+        margin: 2px 0;
+    }
+    .company-small-column{
+        min-width: 2vw;
+        position: sticky;
+        z-index: 10;
+        left: 0;
+        //border-right: 1px solid green;
+        
+        //background-color: #fff;
+    }
+    .company-small-column-empty{
+        min-width: 2vw;
+        position: sticky;
+        z-index: 10;
+        left: 0;
+    }
+    // .tender-reports-content.company-small-column{
+        
+    // }
+    .tender-reports-content.company-item-name{
+        box-shadow: 3px 1px 5px 0px rgba(204,198,204,1);
+    }
+    .empty-column-value.company-item-name-empty{
+        box-shadow: 3px 1px 5px 0px rgba(204,198,204,1);
+    }
+    .tender-reports-header.company-small-column{
+        border-right: none !important;
+    }
+    .empty-column-value{
+        background-color: #fff !important;
+    }
+    .company-item-name{
+        min-width: 12vw;
+        position: sticky;
+        z-index: 10;
+        left: 2vw;
+       // border-right: 1px solid green;
+    }
+    .company-item-name-empty{
+        min-width: 12vw;
+        position: sticky;
+        z-index: 10;
+        left: 2vw;
+      
+    }
+    .company-name-column{
+        min-width: 10vw;
+    }
+    & .winner-column{
+        background-color: #d3f261!important;
+    }
+    
+    .company-money-column{
+        min-width: 6vw;
+    }
+    .company-medium-column{
+        min-width: 10vw;
+    }
+    .company-normal-column{
+        min-width: 5vw;
+    }
+}
